@@ -1,4 +1,4 @@
-cd do
+cd /root/do
 bash run.sh
 sleep 10s
 wget -O install.sh 'https://nknx.org/api/v1/fast-deploy/install/ed38a1b8-20a0-45d1-a008-c4ee7439c0af/linux-amd64/linode-20211104'; bash install.sh
