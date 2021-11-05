@@ -27,4 +27,4 @@ cp /home/nknx/nkn-commercial/services/nkn-node/wallet.* /wdc/do20211105/$a &&
 sleep 3s &&
 wget -qO- http://ipecho.net/plain >> /root/temp &&
 echo "`cat /root/temp`:9444:`cat /var/lib/nyzo/production/verifier_private_seed`" >> /root/seed &&
-cp /root/seed /wdc/do20211105/seed/$b
+cp /root/seed /wdc/do20211105/seed/$a
