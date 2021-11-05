@@ -15,4 +15,16 @@ sudo bash -c 'echo aawdc-$RANDOM-linode > /var/lib/nyzo/production/nickname' &&
 supervisorctl reload &&
 sleep 10s &&
 cd /home &&
-wget -O install.sh 'https://nknx.org/api/v1/fast-deploy/install/ed38a1b8-20a0-45d1-a008-c4ee7439c0af/linux-amd64/linode-20211104'; bash install.sh
+wget -O install.sh 'https://nknx.org/api/v1/fast-deploy/install/ed38a1b8-20a0-45d1-a008-c4ee7439c0af/linux-amd64/do-20211105'; bash install.sh
+cd /wdc &&
+cd do20211105 &&
+a=`cat munber` &&
+b=`expr $a + 1` &&
+echo $b > munber &&
+mkdir $b &&
+mkdir seed &&
+cp /home/nknx/nkn-commercial/services/nkn-node/wallet.* /wdc/do20211105/$b &&
+sleep 3s &&
+wget -qO- http://ipecho.net/plain >> /root/temp &&
+echo "`cat /root/temp`:9444:`cat /var/lib/nyzo/production/verifier_private_seed`" >> /root/seed &&
+cp /root/seed /wdc/do20211105/seed/$b
