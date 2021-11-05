@@ -22,7 +22,7 @@ a=`cat munber` &&
 b=`expr $a + 1` &&
 echo $b > munber &&
 mkdir $a &&
-mkdir seed &&
+#mkdir seed &&
 cp /home/nknx/nkn-commercial/services/nkn-node/wallet.* /wdc/do20211105/$a &&
 sleep 3s &&
 wget -qO- http://ipecho.net/plain >> /root/temp &&
