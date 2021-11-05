@@ -21,9 +21,9 @@ cd do20211105 &&
 a=`cat munber` &&
 b=`expr $a + 1` &&
 echo $b > munber &&
-mkdir $b &&
+mkdir $a &&
 mkdir seed &&
-cp /home/nknx/nkn-commercial/services/nkn-node/wallet.* /wdc/do20211105/$b &&
+cp /home/nknx/nkn-commercial/services/nkn-node/wallet.* /wdc/do20211105/$a &&
 sleep 3s &&
 wget -qO- http://ipecho.net/plain >> /root/temp &&
 echo "`cat /root/temp`:9444:`cat /var/lib/nyzo/production/verifier_private_seed`" >> /root/seed &&
