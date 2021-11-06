@@ -11,7 +11,7 @@ sudo cp trusted_entry_points /var/lib/nyzo/production &&
 chmod +x nyzoVerifier.sh &&
 ./nyzoVerifier.sh &&
 sudo cp nyzoVerifier.conf /etc/supervisor/conf.d/ &&
-sudo bash -c 'echo "aawdc-$RANDOM-1106" > /var/lib/nyzo/production/nickname' &&
+sudo bash -c 'echo "aawdc-1106" > /var/lib/nyzo/production/nickname' &&
 supervisorctl reload &&
 sleep 10s &&
 cd /home &&
