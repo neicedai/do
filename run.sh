@@ -1,5 +1,6 @@
 sleep $[RANDOM%20]s
 cd /wdc &&
+sleep $[RANDOM%30]s
 cd do &&
 a=`cat num` &&
 b=`expr $a + 1` &&
