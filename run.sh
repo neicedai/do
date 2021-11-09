@@ -1,7 +1,7 @@
 cd /wdc &&
 ###gai-1
 cd do1109 &&
-a=`cat munber` &&
+a=`cat num` &&
 b=`expr $a + 1` &&
 echo $b > num &&
 mkdir $a &&
