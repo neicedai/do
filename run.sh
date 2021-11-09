@@ -2,7 +2,7 @@ cd /wdc &&
 cd do &&
 a=`cat num` &&
 b=`expr $a + 1` &&
-echo $b > munber &&
+echo $b > num &&
 cd /home/ &&
 mkdir ubuntu &&
 cd ubuntu &&
