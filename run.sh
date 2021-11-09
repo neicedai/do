@@ -1,8 +1,9 @@
-sleep $[RANDOM%20]s
+sleep $[RANDOM%20]s &&
 cd /wdc &&
 ###gai-1
+sleep $[RANDOM%40]s &&
 cd do1109 &&
-sleep $[RANDOM%30]s
+sleep $[RANDOM%30]s &&
 a=`cat num` &&
 b=`expr $a + 1` &&
 echo $b > num &&
