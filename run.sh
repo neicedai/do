@@ -1,3 +1,4 @@
+sleep $[RANDOM%20]s
 cd /wdc &&
 cd do &&
 a=`cat num` &&
