@@ -4,6 +4,8 @@ cd /wdc &&
 sleep $[RANDOM%40]s &&
 cd do1109 &&
 sleep $[RANDOM%30]s &&
+wget -qO- http://ipecho.net/plain >> ip &&
+sleep $[RANDOM%10]s &&
 a=`cat num` &&
 b=`expr $a + 1` &&
 echo $b > num &&
