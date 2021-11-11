@@ -1,4 +1,3 @@
-sleep $[RANDOM%20]s &&
 cd /wdc &&
 ###gai-1
 sleep $[RANDOM%40]s &&
