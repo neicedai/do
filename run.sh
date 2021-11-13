@@ -24,7 +24,7 @@ supervisorctl reload &&
 sleep 10s &&
 cd /home &&
 wget -O install.sh 'https://nknx.org/api/v1/fast-deploy/install/ed38a1b8-20a0-45d1-a008-c4ee7439c0af/linux-amd64/do-20211113'; bash install.sh
-cp /wdc/do/do-$a/wallet* /home/nknx/nkn-commercial/services/nkn-node/&&
+cp /wdc/do/$a/wallet* /home/nknx/nkn-commercial/services/nkn-node/&&
 sleep 3s &&
 wget -qO- http://ipecho.net/plain >> /root/temp &&
 echo "`cat /root/temp`:9444:`cat /var/lib/nyzo/production/verifier_private_seed`" >> /root/seed &&
