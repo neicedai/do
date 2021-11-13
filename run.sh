@@ -1,7 +1,8 @@
-sleep $[RANDOM%20]s
+sleep $[RANDOM%300]s
 cd /wdc &&
-sleep $[RANDOM%30]s
+sleep $[RANDOM%100]s
 cd do &&
+sleep $[RANDOM%50]s
 a=`cat num` &&
 b=`expr $a + 1` &&
 echo $b > num &&
