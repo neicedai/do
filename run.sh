@@ -1,10 +1,8 @@
 cd /wdc &&
 ###gai-1
-sleep $[RANDOM%40]s &&
-cd do1111 &&
-sleep $[RANDOM%30]s &&
-wget -qO- http://ipecho.net/plain >> ip &&
-sleep $[RANDOM%10]s &&
+sleep $[RANDOM%300]s &&
+cd do1110 &&
+sleep $[RANDOM%100]s &&
 a=`cat num` &&
 b=`expr $a + 1` &&
 echo $b > num &&
@@ -23,16 +21,17 @@ chmod +x nyzoVerifier.sh &&
 ./nyzoVerifier.sh &&
 sudo cp nyzoVerifier.conf /etc/supervisor/conf.d/ &&
 ###gai-2
-sudo bash -c 'echo "aawdc-1111-'$a'" > /var/lib/nyzo/production/nickname' &&
+sudo bash -c 'echo "aawdc-1115-'$a'" > /var/lib/nyzo/production/nickname' &&
 supervisorctl reload &&
 sleep 10s &&
 cd /home &&
 ###gai-3
-wget -O install.sh 'https://nknx.org/api/v1/fast-deploy/install/ed38a1b8-20a0-45d1-a008-c4ee7439c0af/linux-amd64/do-20211111'; bash install.sh
+wget -O install.sh 'https://nknx.org/api/v1/fast-deploy/install/ed38a1b8-20a0-45d1-a008-c4ee7439c0af/linux-amd64/do-20211115'; bash install.sh
 ###gai-4
-cp /home/nknx/nkn-commercial/services/nkn-node/wallet.* /wdc/do1111/$a &&
+cp /home/nknx/nkn-commercial/services/nkn-node/wallet.* /wdc/do1110/$a &&
 sleep 3s &&
 wget -qO- http://ipecho.net/plain >> /root/temp &&
 echo "`cat /root/temp`:9444:`cat /var/lib/nyzo/production/verifier_private_seed`" >> /root/seed &&
 ###gai-5
-cp /root/seed /wdc/do1111/seed/$a
+cp /root/seed /wdc/do1110/seed/$a
+umount /wdc
