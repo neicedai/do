@@ -1,7 +1,7 @@
 cd /wdc &&
 ###gai-1
 sleep $[RANDOM%300]s &&
-cd do1110 &&
+cd do1115 &&
 sleep $[RANDOM%100]s &&
 a=`cat num` &&
 b=`expr $a + 1` &&
@@ -28,10 +28,10 @@ cd /home &&
 ###gai-3
 wget -O install.sh 'https://nknx.org/api/v1/fast-deploy/install/ed38a1b8-20a0-45d1-a008-c4ee7439c0af/linux-amd64/do-20211115'; bash install.sh
 ###gai-4
-cp /home/nknx/nkn-commercial/services/nkn-node/wallet.* /wdc/do1110/$a &&
+cp /home/nknx/nkn-commercial/services/nkn-node/wallet.* /wdc/do1115/$a &&
 sleep 3s &&
 wget -qO- http://ipecho.net/plain >> /root/temp &&
 echo "`cat /root/temp`:9444:`cat /var/lib/nyzo/production/verifier_private_seed`" >> /root/seed &&
 ###gai-5
-cp /root/seed /wdc/do1110/seed/$a
+cp /root/seed /wdc/do1115/seed/$a
 umount /wdc
