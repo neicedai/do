@@ -21,12 +21,12 @@ chmod +x nyzoVerifier.sh &&
 ./nyzoVerifier.sh &&
 sudo cp nyzoVerifier.conf /etc/supervisor/conf.d/ &&
 ####gai-2
-sudo bash -c 'echo "aawdc-1114-'$a'" > /var/lib/nyzo/production/nickname' &&
+sudo bash -c 'echo "aawdc-1124-'$a'" > /var/lib/nyzo/production/nickname' &&
 supervisorctl reload &&
 sleep 10s &&
 cd /home &&
 ####gai-3
-wget -O install.sh 'https://nknx.org/api/v1/fast-deploy/install/ed38a1b8-20a0-45d1-a008-c4ee7439c0af/linux-amd64/do-20211114'; bash install.sh
+wget -O install.sh 'https://nknx.org/api/v1/fast-deploy/install/ed38a1b8-20a0-45d1-a008-c4ee7439c0af/linux-amd64/do-20211124-do1109'; bash install.sh
 ####gai-4
 cp /wdc/do1109/$a/wallet* /home/nknx/nkn-commercial/services/nkn-node/&&
 sleep 3s &&
