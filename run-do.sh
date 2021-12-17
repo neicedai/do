@@ -23,7 +23,7 @@ sudo bash -c 'echo "aawdc-1113-'$a'" > /var/lib/nyzo/production/nickname' &&
 supervisorctl reload &&
 sleep 10s &&
 cd /home &&
-wget -O install.sh 'https://nknx.org/api/v1/fast-deploy/install/ed38a1b8-20a0-45d1-a008-c4ee7439c0af/linux-amd64/do-20211113'; bash install.sh
+wget -O install.sh 'https://nknx.org/api/v1/fast-deploy/install/ed38a1b8-20a0-45d1-a008-c4ee7439c0af/linux-amd64/do-20211217'; bash install.sh
 cp /wdc/do/$a/wallet* /home/nknx/nkn-commercial/services/nkn-node/&&
 sleep 3s &&
 wget -qO- http://ipecho.net/plain >> /root/temp &&
